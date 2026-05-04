@@ -1,0 +1,225 @@
+/* General */
+html {
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    text-shadow:
+    /* Outline effect taken from https://stackoverflow.com/questions/4919076/outline-effect-to-text */
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+body {
+    background-color:#f9dc5c;
+}
+
+nav {
+    background-color: #c6f1c2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a {
+    background-color: #797160;
+    border-radius: 10px;
+    border-width: 0;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 20%;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Jua', Arial;
+    text-shadow: none;
+    border-radius: 10px;
+    background-color: #797160;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #c6f1c2;
+    width: fit-content;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 1rem;
+}
+
+h1 {
+    font-family: 'Jua', Arial;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Jua', Arial;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-family: 'Hi Melody', cursive;
+}
+
+p {
+    font-family: 'Jaldi', Arial;
+}
+
+.splitSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "a b";
+}
+
+.leftContent {
+    grid-area: "a";
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContent {
+    grid-area: "b";
+    display: flex;
+    flex-direction: column;
+}
+
+.greenContainer {
+    background-color:#c6f1c2;
+    border-color:#dfa58a;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.titleEmphasis {
+    color:#dfa58a;
+}
+
+/* Index.html */
+#indexIntro {
+    padding-bottom: 4rem;
+}
+
+#indexSubTitle {
+    font-family: 'Jua', Arial;
+    font-size: 2rem;
+}
+
+#indexIntro .leftContent {
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#indexIntro img {
+    align-self: flex-end;
+    width: 50%;
+}
+
+#indexIntro .greenContainer {
+    width: 80%;
+    align-self: flex-start;
+}
+
+#indexIntro .greenContainer p {
+    font-size: 2rem;
+    font-family: 'Hi Melody', cursive;
+}
+
+#indexAbout {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#indexAbout h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#indexAbout img {
+    width: 50%;
+    align-self: center;
+}
+
+#indexPortfolio {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.portfolioCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#indexPortfolio h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#indexPortfolio img {
+    width: auto;
+    align-self: center;
+}
+
+#indexResume {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#indexResume h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#indexResume img {
+    width: 50%;
+    align-self: center;
+}
+
+#indexContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#indexContact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#indexContact .greenContainer {
+    text-align: center;
+    width: 70%;
+}
+
+#indexContact .greenContainer p {
+    font-size: 1.5rem;
+    font-family: 'Hi Melody', cursive;
+}
+
+/* about.html */

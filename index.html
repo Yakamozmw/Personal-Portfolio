@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Jaldi:wght@400;700&family=Jua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
 </head>
@@ -10,18 +13,24 @@
     <header>
         <nav>
             <a href="about.html">About</a>
-            <a href="index.html">Portfolio</a>
+            <a href="index.html#indexPortfolio">Portfolio</a>
             <a href="resume.html">Resume</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
         <section id="indexIntro">
-            <p id="indexSubTitle">Hi there.</p>
-            <h1>My name is<br>
-                <span class="titleEmphasis">Joshua Follente</span>
-            </h1>
-            <img src="images/lightbulb.png" alt="Cartoony Lit Lightbulb">
+            <div class="splitSection">
+                <div class="leftContent">
+                    <p id="indexSubTitle">Hi there.</p>
+                    <h1>My name is<br>
+                    <span class="titleEmphasis">Joshua Follente</span>
+                    </h1>
+                </div>
+                <div class="rightContent">
+                    <img src="images/lightbulb.png" alt="Cartoony Lit Lightbulb">
+                </div>
+            </div>
             <div class="greenContainer">
                 <p>I’m a current Web Development student, looking forward to expanding my knowledge in the future.</p>
             </div>
@@ -31,7 +40,7 @@
             <div class="splitSection">
                 <div class="leftContent">
                     <div class="greenContainer">
-                        <p>I’m a current Web Development student, looking forward to expanding my knowledge in the future.</p>
+                        <p>Learn about my journey, how I got to where I am now, and some fun details about my personal life.</p>
                     </div>
                     <a href="about.html">Learn More</a>
                 </div>
@@ -56,12 +65,6 @@
                         <img src="images/csszengardenCard.png" alt="Screenshot of modified CSS Zen Garden Website">
                         <a href="csszengarden.html">View Project</a>
                     </article>
-                    <article class="greenContainer portfolioCard">
-                        <h3>Progamming Case Study: PawPal Website</h3>
-                        <p>A "Pet Wellness Tracker" web application prototype for the fictional brand PawPal.</p>
-                        <img src="images/pawpalCard.png" alt="PawPal Website Home Page">
-                        <a href="pawpal.html">View Project</a>
-                    </article>
                 </div>
                 <div class="rightContent">
                     <article class="greenContainer portfolioCard">
@@ -73,6 +76,12 @@
                         <h3>Writing Case Study: Attention-seekers on our Attention</h3>
                         <p>A timed writing assignment debating whether attention-seekers or attention-providers hold the power in an attention economy.</p>
                         <a href="attentionseekers.html">View Project</a>
+                    </article>
+                    <article class="greenContainer portfolioCard">
+                        <h3>Progamming Case Study: PawPal Website</h3>
+                        <p>A "Pet Wellness Tracker" web application prototype for the fictional brand PawPal.</p>
+                        <img src="images/pawpalCard.png" alt="PawPal Website Home Page">
+                        <a href="pawpal.html">View Project</a>
                     </article>
                 </div>
             </div>
