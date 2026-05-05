@@ -75,6 +75,12 @@ p {
     font-family: 'Jaldi', Arial;
 }
 
+.row {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
 .splitSection {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -83,13 +89,13 @@ p {
 }
 
 .leftContent {
-    grid-area: "a";
+    grid-area: a;
     display: flex;
     flex-direction: column;
 }
 
 .rightContent {
-    grid-area: "b";
+    grid-area: b;
     display: flex;
     flex-direction: column;
 }
@@ -223,3 +229,998 @@ p {
 }
 
 /* about.html */
+#aboutIntro {
+    padding-bottom: 4rem;
+}
+
+#aboutSubtitle {
+    font-family: 'Jua', Arial;
+    font-size: 2rem;
+}
+
+#aboutIntro .leftContent {
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#aboutIntro img {
+    align-self: flex-end;
+    width: 50%;
+}
+
+#aboutIntro .greenContainer {
+    width: 80%;
+    align-self: flex-start;
+}
+
+#aboutIntro .greenContainer p {
+    font-size: 1rem;
+    font-family: 'Hi Melody', cursive;
+}
+
+#aboutGrowthStory {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#aboutGrowthStory h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#aboutGrowthStory img {
+    width: 75%;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+#aboutFiveYearPlan {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#aboutFiveYearPlan h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#aboutFiveYearPlan img {
+    width: 60%;
+    margin-top: 1rem;
+}
+
+#aboutFiveYearPlan .leftContent img:last-child {
+    position: absolute;
+    top: 250px;
+    left: 60%;
+    width: 30%;
+    height: auto;
+}
+
+#aboutFiveYearPlan .leftContent {
+    position: relative;
+    align-items: center;
+}
+
+#aboutHobbies {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#aboutHobbies h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#aboutHobbies img {
+    width: 75%;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.hobbyCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+/* resume.html */
+#resumeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resumeMain h1 {
+    margin-top: 4rem;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+#resume {
+    padding: 1.5rem;
+    width: 1000px;
+    background-color: white;
+    margin-bottom: 4rem;
+}
+
+#resume * {
+    font-family: 'Jua', Arial;
+    color: black;
+    text-shadow: none;
+}
+
+#resume section {
+    border-top: #000;
+    border-width: 0px;
+    border-top-width: 1px;
+    border-style: solid;
+    padding: 1rem;
+}
+
+.resumeCard {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#resumePreviewEducation li:nth-child(3) {
+    list-style-type: none;
+}
+
+#resume h2 {
+    margin-bottom: 0.5rem;
+}
+
+#resume h3 {
+    margin-bottom: 0.5rem;
+}
+
+#resumeDownload {
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#resumeDownload h2 {
+    margin-bottom: 3rem;
+}
+
+#resumeDownload p {
+    text-align: center;
+    width: 75%;
+    font-size: 2rem;
+    font-family: 'Hi Melody', cursive;
+}
+
+#resumeDownload a {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0;
+    text-shadow:
+    /* Outline effect taken from https://stackoverflow.com/questions/4919076/outline-effect-to-text */
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    background-color: transparent;
+    color: #FF9021;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Hi Melody', cursive;
+}
+
+/* contact.html */
+#contactMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactMain h1 {
+    margin-top: 4rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+#contactMain h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Hi Melody', cursive;
+    margin-bottom: 2rem;
+}
+
+#contactForm {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+form label, form input, form textarea {
+    font-size: 1rem;
+    font-family: Arial;
+    margin-bottom: 1rem;
+}
+
+form input, form textarea {
+    color:black;
+    border-width: 0px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color:#797160;
+    width: 75%;
+    background-color: transparent;
+    padding: 0.5rem;
+    text-shadow: none;
+    margin-bottom: 1rem;
+}
+
+form input::selection {
+    border-width: 0px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color:#797160;
+}
+
+form textarea {
+    margin-bottom: 2rem;
+}
+
+form button {
+    align-self: flex-end;
+    text-shadow: none;
+    background-color: #797160;
+    border-radius: 10px;
+    border-width: 0;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 170px;
+}
+
+#socialLinks {
+    width: 100dvw;
+    display: flex;
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.socialLink {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.socialLink img {
+    width: 15dvw;
+}
+
+#socialLinks p, #socialLinks a {
+    padding: 0px;
+    margin: 1rem;
+    text-shadow:
+    /* Outline effect taken from https://stackoverflow.com/questions/4919076/outline-effect-to-text */
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    background-color: transparent;
+    border-width: 0px;
+    font-family: 'Jaldi', Arial;
+    font-size: 1rem;
+}
+
+/* Case studies */
+.challengeCard h3 {
+    font-family: 'Hi Melody', cursive;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* bioshield.html */
+#bioshieldIntro .splitSection {
+    grid-template-columns: 70% 30%;
+}
+
+#bioshieldIntro h1 {
+    padding-left: 20px
+}
+
+#bioshieldIntro {
+    padding-bottom: 4rem;
+}
+
+#bioshieldIntro .leftContent {
+    margin-left: 20px;
+    justify-content: center;
+}
+
+#bioshieldIntro .rightContent {
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#bioshieldIntro img {
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    margin: 1rem;
+}
+
+#bioshieldIntro .greenContainer {
+    width: 90%;
+    align-self: flex-start;
+}
+
+#bioshieldTech {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#bioshieldTech h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#bioshieldTech h3 {
+    margin-bottom: 0.5rem;
+}
+
+#bioshieldTech .greenContainer {
+    padding: 0.5rem;
+    width: 33%;
+}
+
+#bioshieldTech img {
+    height: auto;
+    width: 15%;
+}
+
+#bioshieldTech .greenContainer:last-child img:last-child {
+    width: 30%;
+}
+
+#bioshieldConcepts {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#bioshieldConcepts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#bioshieldConcepts .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#bioshieldConcepts img {
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+}
+
+#bioshieldConcepts .leftContent img:last-child {
+    position: absolute;
+    top: 250px;
+    left: 60%;
+    width: 50%;
+    height: auto;
+}
+
+#bioshieldConcepts .leftContent {
+    position: relative;
+    align-items: center;
+}
+
+#bioshieldChallenges {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#bioshieldChallenges h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#bioshieldChallenges p {
+    margin-bottom: 1rem;
+}
+
+.solutionCard {
+    border-color:#dfa58a;
+    border-style: solid;
+    border-width: 3px;
+    background:#797160;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#bioshieldHabits {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#bioshieldHabits h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#bioshieldHabits img {
+    margin-top: 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+#bioshieldHabits .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* csszengarden.html */
+#csszengardenIntro .splitSection {
+    grid-template-columns: 70% 30%;
+}
+
+#csszengardenIntro h1 {
+    padding-left: 20px
+}
+
+#csszengardenIntro {
+    padding-bottom: 4rem;
+}
+
+#csszengardenIntro .leftContent {
+    margin-left: 20px;
+    justify-content: center;
+}
+
+#csszengardenIntro .rightContent {
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#csszengardenIntro img {
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    margin: 1rem;
+}
+
+#csszengardenIntro .greenContainer {
+    width: 90%;
+    align-self: flex-start;
+}
+
+#csszengardenTech {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#csszengardenTech h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#csszengardenTech h3 {
+    margin-bottom: 0.5rem;
+}
+
+#csszengardenTech .greenContainer {
+    padding: 0.5rem;
+    width: 33%;
+}
+
+#csszengardenTech img {
+    height: auto;
+    width: 15%;
+}
+
+#csszengardenTech .greenContainer:last-child img:last-child {
+    width: 30%;
+}
+
+#csszengardenConcepts {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#csszengardenConcepts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#csszengardenConcepts .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#csszengardenConcepts img {
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+#csszengardenConcepts .leftContent {
+    position: relative;
+    align-items: center;
+}
+
+#csszengardenChallenges {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#csszengardenChallenges h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#csszengardenChallenges p {
+    margin-bottom: 1rem;
+}
+
+.solutionCard {
+    border-color:#dfa58a;
+    border-style: solid;
+    border-width: 3px;
+    background:#797160;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#csszengardenHabits {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#csszengardenHabits h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#csszengardenHabits img {
+    margin-top: 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+#csszengardenHabits .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* pawpal.html */
+#pawpalIntro .splitSection {
+    grid-template-columns: 70% 30%;
+}
+
+#pawpalIntro h1 {
+    padding-left: 20px
+}
+
+#pawpalIntro {
+    padding-bottom: 4rem;
+}
+
+#pawpalIntro .leftContent {
+    margin-left: 20px;
+    justify-content: center;
+}
+
+#pawpalIntro .rightContent {
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#pawpalIntro img {
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    margin: 1rem;
+}
+
+#pawpalIntro .greenContainer {
+    width: 90%;
+    align-self: flex-start;
+}
+
+#pawpalTech {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#pawpalTech h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#pawpalTech h3 {
+    margin-bottom: 0.5rem;
+}
+
+#pawpalTech .greenContainer {
+    padding: 0.5rem;
+    width: 33%;
+}
+
+#pawpalTech img {
+    height: auto;
+    width: 15%;
+}
+
+#pawpalTech .greenContainer:last-child img:last-child {
+    width: 30%;
+}
+
+#pawpalConcepts {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#pawpalConcepts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#pawpalConcepts .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#pawpalConcepts img {
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+}
+
+#pawpalConcepts .leftContent img:last-child {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    width: 50%;
+    height: auto;
+}
+
+#pawpalConcepts .leftContent {
+    position: relative;
+    align-items: center;
+}
+
+#pawpalChallenges {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#pawpalChallenges h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#pawpalChallenges p {
+    margin-bottom: 1rem;
+}
+
+.solutionCard {
+    border-color:#dfa58a;
+    border-style: solid;
+    border-width: 3px;
+    background:#797160;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#pawpalHabits {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#pawpalHabits h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#pawpalHabits img {
+    margin-top: 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+#pawpalHabits .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* enrichment.html */
+#enrichmentIntro .splitSection {
+    grid-template-columns: 70% 30%;
+}
+
+#enrichmentIntro h1 {
+    padding-left: 20px
+}
+
+#enrichmentIntro {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#enrichmentIntro .leftContent {
+    margin-left: 20px;
+    justify-content: center;
+}
+
+#enrichmentIntro .rightContent {
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#enrichmentIntro img {
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    margin: 1rem;
+}
+
+#enrichmentIntro .greenContainer {
+    width: 90%;
+    align-self: flex-start;
+}
+
+#enrichmentConcepts {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#enrichmentConcepts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#enrichmentConcepts .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#enrichmentConcepts img {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+#enrichmentConcepts img:last-child {
+    margin-bottom: 4rem;
+}
+
+#enrichmentConcepts .leftContent {
+    position: relative;
+    align-items: center;
+}
+
+#enrichmentChallenges {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#enrichmentChallenges h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#enrichmentChallenges p {
+    margin-bottom: 1rem;
+}
+
+.solutionCard {
+    border-color:#dfa58a;
+    border-style: solid;
+    border-width: 3px;
+    background:#797160;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#enrichmentHabits {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#enrichmentHabits h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#enrichmentHabits img {
+    margin-top: 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+#enrichmentHabits .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* attentionseekers.html */
+#attentionseekersIntro .splitSection {
+    grid-template-columns: 70% 30%;
+}
+
+#attentionseekersIntro h1 {
+    padding-left: 20px
+}
+
+#attentionseekersIntro {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#attentionseekersIntro .leftContent {
+    margin-left: 20px;
+    justify-content: center;
+}
+
+#attentionseekersIntro .rightContent {
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#attentionseekersIntro img {
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    margin: 1rem;
+}
+
+#attentionseekersIntro .greenContainer {
+    width: 90%;
+    align-self: flex-start;
+}
+
+#attentionseekersConcepts {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#attentionseekersConcepts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#attentionseekersConcepts .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#attentionseekersConcepts img {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+#attentionseekersConcepts img:last-child {
+    margin-bottom: 4rem;
+}
+
+#attentionseekersConcepts .leftContent {
+    position: relative;
+    align-items: center;
+}
+
+#attentionseekersChallenges {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#attentionseekersChallenges h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#attentionseekersChallenges p {
+    margin-bottom: 1rem;
+}
+
+.solutionCard {
+    border-color:#dfa58a;
+    border-style: solid;
+    border-width: 3px;
+    background:#797160;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#attentionseekersHabits {
+    border-top: #797160 solid 3px;
+    border-radius: 50px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#attentionseekersHabits h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#attentionseekersHabits img {
+    margin-top: 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+#attentionseekersHabits .greenContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
